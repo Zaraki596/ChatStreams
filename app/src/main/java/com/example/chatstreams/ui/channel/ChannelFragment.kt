@@ -65,5 +65,24 @@ class ChannelFragment : BindingFragment<FragmentChannelBinding>() {
             findNavController().popBackStack()
         }
 
+        binding.channelListHeaderView.setOnActionButtonClickListener {
+            findNavController().navigate(
+                R.id.action_channelFragment_to_createChannelDialog
+            )
+        }
+
+        binding.channelListView.setChannelItemClickListener { channel ->
+            findNavController().navigate(
+                R.id.action_channelFragment_to_chatFragment,
+                Bundle().apply {
+                    putString(EXTRA_CHANNEL_ID, channel.cid)
+                })
+
+        }
+
+    }
+
+    companion object {
+        const val EXTRA_CHANNEL_ID = "channelId"
     }
 }
