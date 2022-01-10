@@ -2,7 +2,7 @@ package com.example.chatstreams.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.chatstreams.repository.LoginRepository
+import com.example.chatstreams.repository.UserRepository
 import com.example.chatstreams.utils.Constants
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.getstream.chat.android.client.call.await
@@ -13,7 +13,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class LoginViewModel @Inject constructor(
-    private val loginRepository: LoginRepository
+    private val userRepository: UserRepository
 ) : ViewModel() {
 
     /*
@@ -28,7 +28,7 @@ class LoginViewModel @Inject constructor(
         val trimmedUsername = username.trim()
         viewModelScope.launch {
             if (isValidUsername(trimmedUsername)) {
-                val result = loginRepository.loginUser(
+                val result = userRepository.loginUser(
                     userId = trimmedUsername,
                     userName = trimmedUsername
                 ).await()

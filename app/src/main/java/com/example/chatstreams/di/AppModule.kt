@@ -16,6 +16,9 @@ object AppModule {
 
     @Singleton
     @Provides
+    /*
+    * There is another way to pass the keys like this using local properties and build method
+    * but for the brevity purposes here string resources is used*/
     fun provideChatClient(@ApplicationContext context: Context) =
         ChatClient.Builder(context.getString(R.string.api_key), context).build()
 

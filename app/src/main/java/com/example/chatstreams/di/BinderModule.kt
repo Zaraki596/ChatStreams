@@ -1,7 +1,7 @@
 package com.example.chatstreams.di
 
-import com.example.chatstreams.repository.LoginRepository
-import com.example.chatstreams.repository.LoginRepositoryImpl
+import com.example.chatstreams.repository.UserRepository
+import com.example.chatstreams.repository.UserRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -12,5 +12,5 @@ import dagger.hilt.components.SingletonComponent
 abstract class BinderModule {
 
     @Binds
-    abstract fun bindLoginRepository(loginRepositoryImpl: LoginRepositoryImpl): LoginRepository
+    abstract fun bindUserRepository(loginRepositoryImpl: UserRepositoryImpl): UserRepository
 }
