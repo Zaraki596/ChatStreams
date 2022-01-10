@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1001595984520",
+    "project_id": "chatstreams",
+    "storage_bucket": "chatstreams.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001595984520:android:372709c980793784701d3d",
+        "android_client_info": {
+          "package_name": "com.example.chatstreams"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001595984520-mu3uj86qm4ffc02jlfeesrqb7ppoet50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCclgAiysXgVpUsVVOLmoE4R_GK8P8I2DQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001595984520-mu3uj86qm4ffc02jlfeesrqb7ppoet50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

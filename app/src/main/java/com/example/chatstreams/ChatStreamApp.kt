@@ -10,7 +10,7 @@ import javax.inject.Inject
 class ChatStreamApp : Application() {
 
     @Inject
-    lateinit var client : ChatClient
+    lateinit var client: ChatClient
 
     override fun onCreate() {
         super.onCreate()
